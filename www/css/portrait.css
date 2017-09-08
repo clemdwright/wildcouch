@@ -1,0 +1,35 @@
+body {
+  margin: 0px;
+}
+
+#news {
+	margin-bottom: 30px;
+	font-size: 36px;
+}
+
+#name {
+  display: block;
+  margin-top: 84px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+}
+
+#logo {
+  display: block;
+  margin-top: 72px;
+  margin-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 216px;
+}
+
+.button{
+  width: 20%;
+  margin-top: 4%;
+}
+
+.middle {
+  margin-left: 4%;
+  margin-right: 4%;
+}

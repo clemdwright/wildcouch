@@ -1,0 +1,51 @@
+/* Not vertically centered, scrollable */
+#wrapper {
+	width: 800px;
+	margin: auto;
+}
+
+#news {
+	font-size: 24px;
+	margin-bottom: 60px;
+}
+
+/* Absolute vertical centering */
+@media screen and (min-height: 526px) {
+	#wrapper {
+		height: 540px;
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+	}
+}
+
+#music {
+	float: left;
+	width: 30%;
+}
+
+#social {
+	display: inline-block;
+	width: 30%;
+}
+
+#contact {
+	float: right;
+	width: 30%;
+}
+
+#logo, #name, #menu {
+	display: block;
+	width: 50%;
+	margin-bottom: 7%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button {
+	width: 25%;
+	margin-left: 2%;
+	margin-right: 2%;
+}

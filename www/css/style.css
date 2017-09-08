@@ -1,0 +1,27 @@
+* {
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	text-align: center;
+}
+
+#header:hover {
+  cursor: hand;
+  cursor: pointer;
+}
+
+
+a {
+	color:black;
+}
+
+#news {
+	line-height: 125%;
+}
+
+body {
+	background-image: url(../images/background_texture.png);
+}
+
+/*From http://stackoverflow.com/questions/7415872/change-color-of-png-image-via-css*/
+.invert {
+	-webkit-filter: invert(100%);
+}
