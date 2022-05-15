@@ -1,0 +1,41 @@
+<html>
+  <head>
+
+	<!-- Scripts -->
+	<!-- <script src="js/jquery.js"></script>
+	<script src="js/main.js"></script> -->
+	<script src="https://js-cdn.music.apple.com/musickit/v1/musickit.js"></script>
+	
+    <meta name="apple-music-developer-token" content="DEVELOPER-TOKEN">
+    <meta name="apple-music-app-name" content="My Cool Web App">
+    <meta name="apple-music-app-build" content="1978.4.1">
+	
+	<script>
+		let music = MusicKit.getInstance();
+
+		 // This is called with or without authorization: 
+		 music.player.play();
+
+		 // This ensures user authorization before calling play():
+		 music.authorize().then(function() {
+		   music.player.play();
+		 });
+
+		 // You can wrap any method to ensure authorization before calling:
+		 music.authorize().then(function() {
+		   music.api.library.albums.then(function(cloudAlbums) {
+		     // user's cloudAlbums
+		   });
+		 });
+	</script>
+
+	
+	<!-- Meta tags -->
+	<title>Apple Music test</title>
+	
+  </head>
+  <body id = "body">
+	  <button id="apple-music-authorize"></button>
+	  <button id="apple-music-unauthorize"></button>
+  </body>
+</html>
